@@ -1,9 +1,7 @@
 try:
     import os
     from colorama import Fore
-    from awaitKeypress import awaitKeypress
     from random import randint, choice
-    from prettytable import PrettyTable
     from math import floor
 
     answers = {}
@@ -27,7 +25,6 @@ try:
         
     print(Fore.GREEN + "Welcome to the questions!" + Fore.RESET)
     questions = CLInput(int, "How many questions? ")
-    awaitKeypress("Press any key to continue...")
 
     for q in range(1, questions+1):
         num1 = randint(1, 20)
